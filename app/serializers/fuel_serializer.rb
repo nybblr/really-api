@@ -1,3 +1,3 @@
 class FuelSerializer < ActiveModel::Serializer
-  attributes :id, :name, :caveats, :formula
+  attributes :id, :rocket_id, :name, :caveats, :formula
 end
