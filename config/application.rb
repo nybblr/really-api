@@ -25,7 +25,7 @@ module ReallyApi
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.middleware.use Rack::Cors do
+    config.middleware.insert_after Rails::Rack::Logger, Rack::Cors, logger: Rails.logger do
       allow do
         origins '*'
         resource '*',
