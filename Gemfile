@@ -8,6 +8,8 @@ gem 'sqlite3'
 
 gem 'active_model_serializers'
 
+gem 'rack-cors', require: 'rack/cors'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
