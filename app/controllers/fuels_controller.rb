@@ -33,6 +33,7 @@ class FuelsController < ApplicationController
 
   def fuel_params
     params.require(:fuel).permit(
+      :rocket_id,
       :name, :caveats, :formula
     )
   end

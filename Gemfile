@@ -10,6 +10,13 @@ gem 'active_model_serializers'
 
 gem 'rack-cors', require: 'rack/cors'
 
+# Realtime
+gem 'robin-rails', github: 'nybblr/robin-rails' # Robin.js vendor and Rails events
+gem 'faye' # websocket backend
+gem 'thin' # long requests requires thin
+
+gem 'foreman'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
